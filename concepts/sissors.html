@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: aqua;
+            margin: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        #user, #maq {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        #imgUser, #imgMaq {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+            display: none;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="user">Jugador: </div>
+        <img id="imgUser" src="papel.png" alt="Imagen del usuario"/>
+        <div id="maq">Máquina: </div>
+        <img id="imgMaq" src="piedra.png" alt="Imagen de la máquina"/>
+        <div id="message"></div>
+        <button id="btnPlay">Jugar</button>
+    </div>
+    
+    <script src="./scissors.js"></script>
+</body>
+</html>

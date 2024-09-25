@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            place-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #vidUser, #divMaq {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            display: grid;
+            place-items: center;
+            margin: 10px;
+        }
+        #message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btnPlay">Jugar</button>
+    <div id="vidUser">Usuario</div>
+    <div id="divMaq">Máquina</div>
+    <h1 id="message">Resultado</h1>
+    <script src="./scissors.js"></script>
+</body>
+</html>
