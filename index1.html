@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piedra, Papel o Tijeras</title>
+    <title>Fundamentos Javascript</title>
     <style>
         body {
             margin: 0;
@@ -13,19 +13,19 @@
             height: 100vh;
             place-items: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #f0f0f0; /* Color de fondo suave */
         }
-        #vidUser, #divMaq {
-            width: 150px;
-            height: 150px;
-            border: 1px solid black;
+        #bola {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%; /* Cambiado a 50% para ser perfectamente redondo */
+            border: 5px solid rgb(0, 255, 0);
             display: grid;
             place-items: center;
-            margin: 10px;
+            position: relative; 
+            background-color: white; /* Fondo blanco para el contenedor */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para efecto de profundidad */
         }
-        #message {
-            margin-top: 20px;
-        }
-
         a {
             position: absolute;
             top: 10px;
@@ -46,13 +46,10 @@
     </style>
 </head>
 <body>
-    <div></div>
-        <a href="../concepts/index.html">Retroceder</a>
+    <a href="../concepts/index.html">Retroceder</a>
+    <div id="bola">
+        <h1 id="message">Bola Mágica</h1>
     </div>
-    <button id="btnPlay">Jugar</button>
-    <div id="vidUser">Usuario</div>
-    <div id="divMaq">Máquina</div>
-    <h1 id="message">Resultado</h1>
-    <script src="./scissors.js"></script>
+    <script src="../"></script>
 </body>
 </html>

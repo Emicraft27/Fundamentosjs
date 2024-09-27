@@ -15,7 +15,7 @@ const play = () => {
     switch (aleatorio) {
         case 0:
             choiceMaq = 'piedra';
-            imgMaq.src = 'imagenes/piedra.png';
+            imgMaq.src = 'imagenes/roca.webp';
             break;
         case 1:
             choiceMaq = 'papel';
@@ -23,11 +23,11 @@ const play = () => {
             break;
         case 2:
             choiceMaq = 'tijeras';
-            imgMaq.src = 'imagenes/tijera.png';
+            imgMaq.src = 'imagenes/tijeras.jpg';
             break;
     }
 
-    divMaq.innerText = Máquina: ${choiceMaq};
+    divMaq.innerText = `Máquina: ${choiceMaq}`;
     imgMaq.style.display = 'block'; 
 
     switch (true) {
@@ -43,8 +43,8 @@ const play = () => {
             message.innerText = "¡Perdiste!";
     }
 
-    divUser.innerText = Usuario: ${choiceUser};
-    imgUser.src = imagenes/imagen_${choiceUser}.png; 
+    divUser.innerText = `Usuario: ${choiceUser}`;
+    imgUser.src = `imagenes/imagen_${choiceUser}.png`; 
     imgUser.style.display = 'block'; 
 }
 
