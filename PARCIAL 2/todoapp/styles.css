@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #fff6a1;
+    background-color: #4e4e4c;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@ body {
 .container {
     width: 100%;
     max-width: 600px;
-    background-color: #b99e46;
+    background-color: #777570;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
